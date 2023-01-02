@@ -25,14 +25,60 @@
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
+      <script
+        type="text/JavaScript"
+        src=" https://MomentJS.com/downloads/moment.js"
+      ></script>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
+      <h2 class="'date">      <div style="font-size: 25px" id="todaysdate"></div>
+        <script type="text/JavaScript">
+          var a = moment().toString();
+          document.getElementById("todaysdate").innerHTML = a;
+        </script></h2>
+      <div class="calendar">
+        <div class="empty"></div>
+        <div class="planes">
+          <div class="time">Task</div>
+          <div class="plane 1">Complete?</div>
+        </div>
+        <div class="times">
+          <div class="row row-1">9am</div>
+          <div class="row row-2">10am</div>
+          <div class="row row-3">11am</div>
+          <div class="row row-4">12pm</div>
+          <div class="row row-5">1pm</div>
+          <div class="row row-6">2pm</div>
+          <div class="row row-7">3pm</div>
+          <div class="row row-8">4pm</div>
+          <div class="row row-9">5pm</div>
+        </div>
+        <div class="content">
+          <div id="1"></div>
+          <div id="1"></div>
+          <div id="1"></div>
+          <div id="1"></div>
+          <div id="1"></div>
+          <div id="1"></div>
+          <div id="1"></div>
+          <div id="1"></div>
+          <div id="1"></div>
+        </div>
+      </div>
+
       <!-- Timeblocks go here -->
+      <div style="font-size: 25px" id="todaysdate"></div>
+      <script type="text/JavaScript">
+        var a = moment().toString();
+        document.getElementById("todaysdate").innerHTML = a;
+      </script>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="../Develop/script.js"></script>
   </body>
 </html>
